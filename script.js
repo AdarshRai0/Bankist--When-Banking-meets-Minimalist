@@ -114,23 +114,6 @@ nav.addEventListener('mouseover',
 nav.addEventListener('mouseout',
   handleHover.bind(1));
 
-
-  //sticky navigation 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // //lecture
 // const header = document.querySelector('.header');
 // const message = document.createElement('div');
@@ -227,6 +210,8 @@ const headerObserver = new IntersectionObserver(stickyNav, {
 });
 
 headerObserver.observe(header);
+
+
 // Reveal sections
 const allSections = document.querySelectorAll('.section');
 
@@ -249,6 +234,8 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add('section--hidden');
 });
+
+
 // Lazy loading images
 const imgTargets = document.querySelectorAll('img[data-src]');
 
